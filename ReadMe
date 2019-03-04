@@ -2,3 +2,5 @@ These two scripts are what I used for data structuring, analysis, and plotting d
 
 PrecipAndQAnalysis.m is loading data, restructuring it, resampling to different temporal resolutions, and some analysis
 Ch1Figs.m is plotting commands for each figure
+
+.m format is the general file format for MATLAB (v2018a) functions or scripts.
