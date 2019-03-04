@@ -1,0 +1,4 @@
+These two scripts are what I used for data structuring, analysis, and plotting data for Ch1 of my dissertation (details added after publication).
+
+PrecipAndQAnalysis.m is loading data, restructuring it, resampling to different temporal resolutions, and some analysis
+Ch1Figs.m is plotting commands for each figure
