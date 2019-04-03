@@ -173,3 +173,41 @@ set(gca,'YScale','log','Fontsize',myFS)
 xlabel('Proportion of year','fontsize',myFS)
 ylabel('Runoff (mm/d)','fontsize',myFS)
 hold off
+
+%% Exploratory Figs of Yearly hysteresis in RR w/ Storage
+figure
+scatter(allDataMonthly.relS(WY2015I),allDataMonthly.RR(WY2015I),'filled')
+hold on
+scatter(allDataMonthly.relS(WY2016I),allDataMonthly.RR(WY2016I),'filled')
+scatter(allDataMonthly.relS(WY2017I),allDataMonthly.RR(WY2017I),'filled')
+legend('2015','2016','2017')
+xlabel('Relative Storage (mm)')
+ylabel('Runoff Ratio')
+title('All WYs')
+
+%2015
+figure
+scatter(allDataMonthly.relS(WY2015I),allDataMonthly.RR(WY2015I),36,[1:12],'filled')
+h = colorbar('Direction','Reverse');
+set(h,'TickLabels',{'Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'})
+xlabel('Relative Storage (mm)')
+ylabel('Runoff Ratio')
+title('2015')
+
+%2016
+figure
+scatter(allDataMonthly.relS(WY2016I),allDataMonthly.RR(WY2016I),36,[1:12],'filled')
+h = colorbar('Direction','Reverse');
+set(h,'TickLabels',{'Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'})
+xlabel('Relative Storage (mm)')
+ylabel('Runoff Ratio')
+title('2016')
+
+%2017
+figure
+scatter(allDataMonthly.relS(WY2017I),allDataMonthly.RR(WY2017I),36,[1:12],'filled')
+h = colorbar('Direction','Reverse');
+set(h,'TickLabels',{'Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'})
+xlabel('Relative Storage (mm)')
+ylabel('Runoff Ratio')
+title('2017')
